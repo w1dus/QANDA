@@ -192,5 +192,57 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
     .main .article04 .table-wrap .halfBox .half.box{ gap: 10px; }
 }
 
+/*  .main .article05 */
+.main .article05{ background-color: #F4F4F4; padding: 100px 0 20px 0; position: relative; overflow: hidden;  }
+.main .article05 .background{ position: absolute; max-width: 100%; }
+.main .article05 .inner{ position: relative; z-index: 1; }
+.main .article05 .background.top{ right: 0; top: 0; }
+.main .article05 .background.bottom{ left: 0; bottom: 0; }
+.main .main_t2{ text-align: center; margin-top: 8px; font-size: 30px; }
+.main .main_t2 .moBr{ display: none; }
+.main .article05 .item-list{ margin-top: 44px; }
+.main .article05 .item-list > li + li{ margin-top: 15px; }
+.main .article05 .item-list .arrow{ display: flex; align-items: center; justify-content: center; }
+.main .article05 .item-list .item{ display: flex; align-items: center; gap: 80px; background-color: #ECEDEF; border-radius: 10px; padding: 48px 77px; }
+.main .article05 .item-list .item.reverse{ flex-direction: row-reverse; text-align: right; }
+.main .article05 .item-list .item.reverse  .contentBox{ align-items: flex-end; }
+.main .article05 .item-list .item .videoBox{ filter: drop-shadow(9.955px 12.799px 27.8px rgba(0, 0, 0, 0.15)); flex-shrink: 0; background-color: #dfdfdf; border-radius: 10px; width: 400px; height: 280px; flex-shrink: 0; border-radius: 20px;  }
+.main .article05 .item-list .item .contentBox{ display: flex; flex-direction: column; gap: 20px; align-items: flex-start; flex-grow: 1; }
+.main .article05 .item-list .item .contentBox .step{ font-weight: 700; background-color: #F50; color: #fff; font-size: 20px; padding: 4px 22px; }
+.main .article05 .item-list .item .contentBox .t1{ width: 100%; font-weight: 700; font-size: 40px; }
+.main .article05 .item-list .item .contentBox .t2{ width: 100%; font-size: 21px; line-height: 1.5em; }
+.main .article05 .item-list .item .contentBox .t2 b{ font-weight: 700; }
+
+@media screen and (max-width: 1250px) {
+    .main .main_t2{ font-size: 20px; }
+    .main .article05 .item-list .item{ gap: 30px; padding: 20px; }
+    .main .article05 .item-list .item .contentBox .step{ font-size: 16px; }
+    .main .article05 .item-list .item .contentBox .t1{ font-size: 30px; }
+    .main .article05 .item-list .item .contentBox .t2{ font-size: 17px; }
+}
+@media screen and (max-width: 950px) {
+    .main .main_t2 .moBr{ display: inline-block; }
+    .main .article05 .item-list .item .contentBox{ gap: 10px; }
+    .main .article05 .item-list .arrow .icon{ width: 15px; }
+    .main .article05 .item-list .item .videoBox{ width: 40vw; height: 30vw; border-radius: 2vw; }
+}
+@media screen and (max-width: 650px) {
+    .main .main_t2{ font-size: 18px; }
+    .main .article05 .item-list .item{ flex-direction: column; padding-bottom: 30px; }
+    .main .article05 .item-list .item.reverse{ flex-direction: column; }
+    .main .article05 .item-list .item.reverse .contentBox{ align-items: flex-start; text-align: left; }
+    .main .article05 .item-list .item .videoBox{ width: 100%; height: 107vw; }
+    .main .article05 .item-list .item .contentBox{ width: 100%; }
+    .main .article05 .item-list .item .contentBox .step{ font-size: 14px; padding: 2px 10px; }
+    .main .article05 .item-list .item .contentBox .t1{ font-size: 20px; }
+    .main .article05 .item-list .item .contentBox .t2{ font-size: 14px; }
+}
+
+
+
+
+
+
+
 
 
