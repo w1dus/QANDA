@@ -21,12 +21,248 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+        <!--yotube background-->
+        <script src="https://unpkg.com/youtube-background@1.0.14/jquery.youtube-background.min.js"></script>
     </head>
     <body>
+        <header>
+            <div class="inner top-inner">
+                <a href="#"><img src="./img/common/logo.png" alt="QANDA" class="logo"/></a>
+                <ul class="menu_list">
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Why QANDA?</a></li>
+                    <li><a href="#">Training</a></li>
+                    <li><a href="#">AI agent</a></li>
+                    <li><a href="#">SAT Expert</a></li>
+                    <li><a href="#">Pricing Plan</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                </ul>
+                <button type="button" class="menu">
+                    <img src="./img/common/menu-icon.svg" alt="menu" class="icon" />
+                </button>
+            </div>
+            <section class="orange-bar">
+                <div class="inner bottom-inner">
+                    <a href="#">🔥 Get up to 27% OFF Now ! CALL  (000) 000-0000 (전화)</a>
+                </div>
+            </section>
+        </header>
+        <section class="close-menu-bg"></section>
+        <section class="right-slide-menu">
+            <div class="btn-wrap">
+                <button type="button" class="close-btn">
+                    <img src="./img/common/close-btn.png" class="icon" alt="close" />
+                </button>
+            </div>
+            <img src="./img/common/black-logo.png" alt="QANDA" class="logo" />
+            <ul class="menu_list">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Why QANDA?</a></li>
+                <li><a href="#">Training</a></li>
+                <li><a href="#">AI agent</a></li>
+                <li><a href="#">SAT Expert</a></li>
+                <li><a href="#">Pricing Plan</a></li>
+                <li><a href="#">Testimonials</a></li>
+            </ul>
+            <!-- <button type="button" class="requestBtn">Request Btn</button> -->
+        </section>
         <main id="smooth-wrapper">
             <article id="smooth-content">
-                
+                <section class="main sec_top">
+                    <article class="article01">
+                        <div class="inner">
+                            <div class="title">
+                                Live 1on1 SAT Tutoring<br/>
+                                <b class="gradient">That Feels In-Person</b>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article03">
+                        <!-- <div class="video-bg"></div> -->
+                        <video autoplay muted playsinline loop controls width="100%">
+                            <source src="./img/main/article03/sec2_video.mp4" type="video/mp4">
+                            당신의 브라우저는 비디오 태그를 지원하지 않습니다.
+                        </video>
+                    </article>
+                    <article class="article04">
+                        <div class="inner">
+                            <div class="main_t1">
+                                Why QANDA? <br/>
+                                <span class="orange">The reason our online <br class="moBr"/>lesson feels in-person</span>
+                            </div>
+                            <div class="table-wrap">
+                                <div class="halfBox">
+                                    <div class="half box bg bg1">
+                                        <img src="./img/main/article04/img1.png" alt="QANDA LIVE SAT Prep" class="icon" />
+                                        <div class="text">QANDA Live SAT Prep</div>
+                                    </div>
+                                    <div class="half box bg bg2">
+                                        <img src="./img/main/article04/img2.png" alt="Typical Zoom Tutor" class="icon" />
+                                        <div class="text">Typical Zoom Tutor</div>
+                                    </div>
+
+
+                                    <div class="full grayBg">Distractions</div>
+                                    <div class="half box">
+                                        <img src="./img/main/article04/check-icon.png" alt="Check" class="icon" />
+                                        <div class="text">
+                                            <b>Low </b><br/>
+                                            Camera-free to protect privacy and keep students focused
+                                        </div>
+                                    </div>
+                                    <div class="half box">
+                                        <img src="./img/main/article04/del-icon.png" alt="delete" class="icon" />
+                                        <div class="text">
+                                            <b>
+                                                High <br/>
+                                            Camera-on format can be uncomfortable and distracting
+                                            </b>
+                                        </div>
+                                    </div>
+
+                                    <div class="full grayBg">Handwriting Sync</div>
+                                    <div class="half box">
+                                        <img src="./img/main/article04/check-icon.png" alt="Check" class="icon" />
+                                        <div class="text">
+                                            <b>Real-time </b><br/>
+                                            interactive writing both student and tutor write and respond on the same screen
+                                        </div>
+                                    </div>
+                                    <div class="half box">
+                                        <img src="./img/main/article04/del-icon.png" alt="delete" class="icon" />
+                                        <div class="text">
+                                            <b>
+                                            Tutor <br/>
+                                            shares screen or uses a whiteboard;student observes
+                                            </b>
+                                        </div>
+                                    </div>
+
+                                    <div class="full grayBg">Voice Interaction</div>
+                                    <div class="half box">
+                                        <img src="./img/main/article04/check-icon.png" alt="Check" class="icon" />
+                                        <div class="text">
+                                            <b>Ask anytime</b> <br/>
+                                            students speak freely and receive immediate feedback
+                                        </div>
+                                    </div>
+                                    <div class="half box">
+                                        <img src="./img/main/article04/del-icon.png" alt="delete" class="icon" />
+                                        <div class="text">
+                                            <b>Mostly passive listening</b>
+                                        </div>
+                                    </div>
+
+                                    <div class="full grayBg">Participation</div>
+                                    <div class="half box">
+                                        <img src="./img/main/article04/check-icon.png" alt="Check" class="icon" />
+                                        <div class="text">
+                                            <b>Active by design</b><br/>
+                                            students are encouraged to write, answer, and solve problems live
+                                        </div>
+                                    </div>
+                                    <div class="half box">
+                                        <img src="./img/main/article04/del-icon.png" alt="delete" class="icon" />
+                                        <div class="text">
+                                            <b>Often passive</b><br/>
+                                            students mostly listen
+                                        </div>
+                                    </div>
+
+                                    <div class="full grayBg">Tutor Quality</div>
+                                    <div class="half box">
+                                        <img src="./img/main/article04/check-icon.png" alt="Check" class="icon" />
+                                        <div class="text">
+                                            <b>Carefully selected tutors </b><br/>
+                                            with the option for Free rematch if needed
+                                        </div>
+                                    </div>
+                                    <div class="half box">
+                                        <img src="./img/main/article04/del-icon.png" alt="delete" class="icon" />
+                                        <div class="text">
+                                            <b>Often passive</b><br/>
+                                            students mostly listen
+                                        </div>
+                                    </div>
+
+                                    <div class="full grayBg">Pricing (per hour)*</div>
+                                    <div class="half box">
+                                        <img src="./img/main/article04/check-icon.png" alt="Check" class="icon" />
+                                        <div class="text">
+                                            <b>From $55</b><br/>
+                                            Premium quality, no premium price
+                                        </div>
+                                    </div>
+                                    <div class="half box">
+                                        <img src="./img/main/article04/del-icon.png" alt="delete" class="icon" />
+                                        <div class="text">
+                                            <b>$70 - $300</b>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <footer>
+                    <div class="inner">
+                        <div class="box1">
+                            <img src="./img/common/black-logo.png" alt="QANDA" class="logo" />
+                            <div class="copy-right pc">©2025QANDA. All rights reserved.</div>
+                        </div>
+                        <div class="box2">
+                            <div class="btn-list">
+                                <button type="button" class="privacyBtn privacyPopupBtn">Privacy Policy</button> | <button type="button" class="usePopup usePopupBtn">Terms of Service</button>
+                            </div>
+                            <div class="info">
+                                SAT® is a registered trademark of the College Entrance Examination Board™. <br/>
+                                The College Entrance Examination Board™ does not endorse, <br/>
+                                nor is it affiliated in any way with the owner or any content of this website.
+                            </div>
+                        </div>
+                        <div class="box3">
+                            <div class="label">Investd by:</div>
+                            <div class="logo-list">
+                                <img src="./img/common/goggle.png" alt="Google" class="logo" />
+                                <img src="./img/common/samsung.png" alt="SAMSUNG VENTURE INVESTMENT" class="logo" />
+                                <img src="./img/common/sbva.png" alt="SBVA" class="logo" />
+                            </div>
+                        </div>
+                        <div class="copy-right mo">©2025QANDA. All rights reserved.</div>
+                    </div>
+                </footer>
             </article>
         </main>
+        
+        <!--개인정보처리방침-->
+        <section class="privacyPopup" id="privacyPopup">
+            <div class="inner">
+                <div class="contentWrap">
+                    <div class="titleBox">
+                        <span>Privacy Policy</span>
+                        <img src="./img/common/close-btn.png" alt="closeBtn" class="closeBtn">
+                    </div>
+                    <div class="contentBox">
+                        해당 홈페이지에 맞는 개인정보처리방침을 입력합니다.           
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--이용약관 팝업-->
+        <section class="privacyPopup" id="usePopup">
+            <div class="inner">
+                <div class="contentWrap">
+                    <div class="titleBox">
+                        <span>Terms of Service</span>
+                        <img src="./img/common/close-btn.png" alt="closeBtn" class="closeBtn">
+                    </div>
+                    <div class="contentBox">
+                        해당 홈페이지에 맞는 회원가입약관을 입력합니다.            
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
