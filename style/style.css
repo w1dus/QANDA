@@ -136,7 +136,7 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
     .main .article01 .title{ font-size: 40px; }
 }
 @media screen and (max-width: 650px) {
-    .main .article01 { height: calc(100vh - 83px); }
+    .main .article01 { height: calc(100vh - 83px); background-size: 1000px auto; background-position: bottom center; }
     .main .article01 .title{ font-size: 7vw; }
 }
 
@@ -202,6 +202,8 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
 .main .main_t2 .moBr{ display: none; }
 .main .article05 .item-list{ margin-top: 44px; }
 .main .article05 .item-list > li + li{ margin-top: 15px; }
+.main .article05 .item-list > li:nth-child(3) .item{ background-color: #E9E9E9; }
+.main .article05 .item-list > li:nth-child(7) .item{ background-color: #E9E9E9; }
 .main .article05 .item-list .arrow{ display: flex; align-items: center; justify-content: center; }
 .main .article05 .item-list .item{ display: flex; align-items: center; gap: 80px; background-color: #ECEDEF; border-radius: 10px; padding: 48px 77px; }
 .main .article05 .item-list .item.reverse{ flex-direction: row-reverse; text-align: right; }
