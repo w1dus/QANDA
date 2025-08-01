@@ -121,6 +121,8 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
     footer .logo{ width:100px; }
 }
 
+.main{ position: relative; overflow: hidden; }
+
 /* .sec_top */
 .sec_top{ padding-top:calc(61px + 43px); }
 @media screen and (max-width: 1250px) {
