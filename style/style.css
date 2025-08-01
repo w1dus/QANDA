@@ -244,7 +244,7 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
 }
 
 /* .main .article06 */
-.main .article06{ display: flex; align-items: center; justify-content: center; padding: 70px 0; background-color: #171717; position: relative; overflow: hidden; }
+.main .article06{ overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 70px 0; background-color: #171717; position: relative; overflow: hidden; }
 .main .article06::after{ content:''; display:block; position: absolute; bottom: -20vw; width: 40%; height: 20vw; border-radius: 887px; opacity: 0.3; background: #F50; filter: blur(86px); }
 .main .article06 .main_t1{ color: #fff; }
 .main .article06 .phoneWrap{ z-index: 2; position: relative; margin-top: 60px; display: flex; align-items: center; justify-content: center; }
