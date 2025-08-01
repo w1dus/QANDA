@@ -122,7 +122,7 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
 }
 
 /* .sec_top */
-.sec_top{ padding-top:calc(61px + 47px); }
+.sec_top{ padding-top:calc(61px + 46px); }
 @media screen and (max-width: 1250px) {
     .sec_top{ padding-top: calc(48px + 46px); }
 }
