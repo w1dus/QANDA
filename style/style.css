@@ -153,12 +153,17 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
 
 /* .main .article03 */
 .main .article03 video{ width: 100%; object-fit: cover; }
+.main .article03 video.mo{ display: none; }
 /* @media screen and (max-width: 1250px) {
     .main .article03 { height: calc(100vh - 96px); }
 }
 @media screen and (max-width: 650px) {
     .main .article03 { height: calc(100vh - 83px); }
 } */
+@media screen and (max-width: 650px) {
+    .main .article03 video.mo{ display: block; }
+    .main .article03 video.pc{ display: none; }
+}
 
 /* .main .article04 */
 .main .article04{ background-image: url('../img/main/article04/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; padding: 76px 0; }

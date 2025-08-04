@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function(e){
   testimonialSlide();
   qnaToggle();
   videoStart();
+  countingNumberHandler();
 })
 
 const videoStart = () => {
@@ -135,4 +136,60 @@ const slideMenuToggleHandler = () => {
     $('.close-menu-bg').removeClass('show');
     $('.right-slide-menu').removeClass('show');
   })
+}
+
+
+const countingNumberHandler = () => {
+  const countList = document.querySelector('.main .countArti');
+  const numbers = document.querySelectorAll('.main .countArti .count_list .item .box .count');
+  const duration = 1; // Duration in seconds
+  if(countList){
+      // Function to reset numbers to 0
+      function resetNumbers() {
+          numbers.forEach(number => {
+              number.textContent = '0';
+          });
+      }
+
+      // Function to format numbers with commas
+      function formatNumber(num) {
+          return num.toLocaleString();
+      }
+
+      // Function to animate counting
+      function animateCount() {
+          numbers.forEach(number => {
+              const target = +number.getAttribute('data-count');
+              const increment = target / (duration * 60); // 60 frames per second
+              let current = 0;
+
+              function updateCount() {
+                  current += increment;
+                  if (current < target) {
+                      number.textContent = formatNumber(Math.ceil(current));
+                      requestAnimationFrame(updateCount);
+                  } else {
+                      number.textContent = formatNumber(target);
+                  }
+              }
+              updateCount();
+          });
+      }
+
+      // Intersection Observer to detect visibility
+      const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  countList.classList.add('on');
+                  animateCount();
+              } else {
+                  countList.classList.remove('on');
+                  resetNumbers();
+              }
+          });
+      }, {
+          threshold: 0.5 // Adjust threshold as needed
+      });
+      observer.observe(countList);
+  }
 }
