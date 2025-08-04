@@ -382,6 +382,6 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
 .privacyPopup .contentWrap .contentBox table{ font-size: 13px; margin-top: 10px; width: 100%; border-collapse: collapse; border: 1px solid #222; }
 .privacyPopup .contentWrap .contentBox table tr,
 .privacyPopup .contentWrap .contentBox table th,
-.privacyPopup .contentWrap .contentBox table td{ padding: 5px 10px; border: 1px solid #222; }
+.privacyPopup .contentWrap .contentBox table td{ border: 1px solid #222; }
 .privacyPopup .contentWrap .contentBox table th{ font-weight: 600; }
 .privacyPopup .contentWrap .contentBox table td:first-child{ text-align: center; }
