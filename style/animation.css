@@ -1,6 +1,31 @@
 @charset "utf-8";
 /* animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; */
 
+.main .article01 .title{ opacity: 0; }
+.main .article01.on .title{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+
+
+.main .main_t1{ opacity: 0; }
+.main .on .main_t1{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+
+.main .main_t2{ opacity: 0; }
+.main .on .main_t2{ animation: fadeIn 0.5s ease-in-out 0.1s 1 forwards running; }
+
+.main .article04 .table-wrap .halfBox{ opacity: 0; }
+.main .article04.on .table-wrap .halfBox{ animation: fadeIn 0.5s ease-in-out 0.1s 1 forwards running; }
+
+.main .article04 .center-text{ opacity: 0; }
+.main .article04.on .center-text{ animation: fadeIn 0.5s ease-in-out 0.2s 1 forwards running; }
+
+
+.main .article05 .item-list > li{ opacity: 0; }
+.main .article05 .item-list > li.on{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+
+.main .article05 .center-text{ opacity: 0; }
+.main .article05 .center-text.on{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+
+.main .countArti .count_list .item{ transition: transform .5s; }
+.main .countArti .count_list .item:hover{ transform: scale(1.05); }
 
 @keyframes fadeIn {
     0% {transform: translate3d(0px, 30px, 0px); }

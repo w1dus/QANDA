@@ -6,7 +6,32 @@ document.addEventListener("DOMContentLoaded", function(e){
   article07_slide();
   testimonialSlide();
   qnaToggle();
+  videoStart();
 })
+
+const videoStart = () => {
+  const targetObserver = new MutationObserver(function (mutations) {
+    mutations.forEach(function (mutation) {
+      if (
+        mutation.attributeName === "class" &&
+        $(mutation.target).hasClass("on")
+      ) {
+        // .article03 안의 video 재생
+        $(".main .article03 video").each(function () {
+          this.play();
+        });
+      }
+    });
+  });
+
+  const article03 = document.querySelector(".main .article03");
+  if (article03) {
+    targetObserver.observe(article03, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+  }
+}
 
 const qnaToggle = () => {
   $('.main .qnaArti .qna_list .item .q_box').click(function(){

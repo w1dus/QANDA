@@ -133,7 +133,7 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
 }
 
 /* .main .article01 */
-.main .article01{ padding:100px 0; background-color: #010101; background-image: url('../img/main/article01/background.png'); background-size: 100% auto; background-repeat: no-repeat; background-position: center; height:calc(100vh - 109px); }
+.main .article01{ padding:100px 0; background-color: #010101; background-image: url('../img/main/article01/background.png'); background-size: 100% auto; background-repeat: no-repeat; background-position: bottom center; height:calc(100vh - 109px); }
 .main .article01 .title{ line-height: 1.5em; font-size: 64px; text-align: center; color: #fff; font-family: 'Paperlogy'; }
 .main .article01 .title b{ -webkit-text-fill-color: transparent; font-size: 1.1em; font-weight: 900; background: linear-gradient(92deg, #FB903B 9.96%, #EA5A0D 77.27%); background-clip: text; -webkit-background-clip: text; }
 @media screen and (max-width: 1250px) {
@@ -149,15 +149,16 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
 /* .main .article02{ position: relative; overflow: hidden; padding:100px 0; height:calc(100vh - 109px); } */
 /* .main .article02 .video-bg{ position: absolute; left: 0; top: 0; width: 100%; height: 100%; } */
 
-@media screen and (max-width: 1250px) {
-    /* .main .article02 { height: calc(100vh - 96px); } */
-}
-@media screen and (max-width: 650px) {
-    /* .main .article02 { height: calc(100vh - 83px); } */
-}
+
 
 /* .main .article03 */
 .main .article03 video{ width: 100%; object-fit: cover; }
+/* @media screen and (max-width: 1250px) {
+    .main .article03 { height: calc(100vh - 96px); }
+}
+@media screen and (max-width: 650px) {
+    .main .article03 { height: calc(100vh - 83px); }
+} */
 
 /* .main .article04 */
 .main .article04{ background-image: url('../img/main/article04/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; padding: 76px 0; }
@@ -335,5 +336,37 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
     .main .qnaArti .qna_list .item .q_box{ padding-left: 40px; }
     .main .qnaArti .qna_list .item .a_box{ padding-left: 40px; }
 }
+
+/* .main .countArti */
+.main .countArti{ padding: 100px 0; overflow: hidden; position: relative; background-image: url('../img/main/countArti/background.png'); background-size: cover; background-repeat: no-repeat; background-position: center; }
+.main .countArti .main_t1{ color: #fff; }
+.main .countArti .main_t2{ color: #fff; }
+.main .countArti .count_list{ display: flex;  margin-top: 36px; width: calc(100% + 10px); margin-left: -5px; }
+.main .countArti .count_list > li{ width: calc(100% / 3); padding: 5px; }
+.main .countArti .count_list .item{ background-image: url('../img/main/countArti/box-background.png'); background-size: cover; background-repeat: no-repeat; background-position: bottom -20px right -20px; padding: 80px 30px; background-color: #fff; box-shadow: 5px 7px 13px 0 rgba(0, 0, 0, 0.25); }
+.main .countArti .count_list .item .box{ display: flex; align-items: center; justify-content: center; gap: 8px; color: #F50; font-size: 62px; font-weight: 700; }
+.main .countArti .count_list .item .box .circle{ background-size: 60%; background-repeat: no-repeat; background-position: center; flex-shrink: 0; background-color: #F50; border-radius: 50%; width: 52px; height: 52px; }
+.main .countArti .count_list .item .box .circle.icon1{ background-image: url('../img/main/countArti/icon1.svg'); }
+.main .countArti .count_list .item .box .circle.icon2{ background-image: url('../img/main/countArti/icon2.svg'); }
+.main .countArti .count_list .item .box .circle.icon3{ background-image: url('../img/main/countArti/icon3.svg'); }
+.main .countArti .count_list .item .box .small{ font-size: .5em; margin-top: .5em; }
+.main .countArti .count_list .item .text{ margin-top: 10px; text-align: center; font-size: 24px; }
+
+@media screen and (max-width: 1250px) {
+    .main .countArti .count_list .item{ padding: 60px 10px; }
+    .main .countArti .count_list .item .box{ font-size: 40px; }
+    .main .countArti .count_list .item .box .circle{ width: 40px; height: 40px; }
+    .main .countArti .count_list .item .text{ font-size: 18px; }
+}
+@media screen and (max-width: 950px) {
+    .main .countArti .count_list{ flex-direction: column; }
+    .main .countArti .count_list > li{ width: 100%; }
+    .main .countArti .count_list .item{ background-position: bottom -50px right -20px; }
+}
+@media screen and (max-width: 650px) {
+
+}
+
+
 
 
