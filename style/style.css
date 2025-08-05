@@ -87,7 +87,7 @@ header .menu{ display: none; }
 /* .orange-bar */
 .orange-bar{ background-color:#F50; }
 .orange-bar .inner a{ display: flex; align-items: center; justify-content: center; }
-.orange-bar .icon{ width: 15px; margin-right: 10px; }
+.orange-bar .icon{ width: 15px; margin-right: 5px; margin-left: 5px; }
 .orange-bar .bottom-inner{ font-size: 18px; height: 60px; display: flex; align-items: center; justify-content: center; text-align: center; color: #fff; }
 
 @media screen and (max-width: 1250px) {
