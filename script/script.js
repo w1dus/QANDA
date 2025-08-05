@@ -20,19 +20,6 @@ const windowResizeVideoStop = () => {
     if (!videoPc.paused) videoPc.pause();
     if (!videoMo.paused) videoMo.pause();
   });
-
-  window.addEventListener('DOMContentLoaded', () => {
-    const autoVideos = document.querySelectorAll('video[autoplay][muted][playsinline]');
-
-    autoVideos.forEach((video) => {
-      const playPromise = video.play();
-      if (playPromise !== undefined) {
-        playPromise.catch((error) => {
-          console.log('Autoplay failed for a video:', error);
-        });
-      }
-    });
-  });
 }
 
 const videoStart = () => {

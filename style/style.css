@@ -231,6 +231,7 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
 .main .article05 .item-list .item.reverse{ flex-direction: row-reverse; }
 .main .article05 .item-list .item.reverse  .contentBox{ align-items: flex-start; }
 .main .article05 .item-list .item .videoBox{ overflow: hidden; filter: drop-shadow(9.955px 12.799px 27.8px rgba(0, 0, 0, 0.15)); flex-shrink: 0; background-color: #dfdfdf; border-radius: 10px; width: 400px; flex-shrink: 0; border-radius: 20px;  }
+.main .article05 .item-list .item .videoBox video{ width: 100%; }
 .main .article05 .item-list .item .contentBox{ display: flex; flex-direction: column; gap: 20px; align-items: flex-start; flex-grow: 1; }
 .main .article05 .item-list .item .contentBox .step{ font-weight: 700; background-color: #F50; color: #fff; font-size: 20px; padding: 4px 22px; }
 .main .article05 .item-list .item .contentBox .t1{ width: 100%; font-weight: 700; font-size: 40px; }
