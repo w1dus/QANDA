@@ -267,6 +267,7 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
     .main .article05 .item-list .item .contentBox .t1{ font-size: 25px; }
     .main .article05 .item-list .item .contentBox .t1 + .t2{ font-size: 21px; }
     .main .article05 .item-list .item .contentBox .t2{ font-size: 18px; }
+    .main .article05 .item-list .item .contentBox .t2 br{ display: none; }
 }
 
 /* .main .article06 */
