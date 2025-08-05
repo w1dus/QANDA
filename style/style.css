@@ -87,14 +87,17 @@ header .menu{ display: none; }
 /* .orange-bar */
 .orange-bar{ background-color:#F50; }
 .orange-bar .inner a{ display: flex; align-items: center; justify-content: center; }
-.orange-bar .icon{ width: 15px; margin-left: 10px; }
-.orange-bar .bottom-inner{ font-size: 18px; padding:20px 10px; text-align: center; color: #fff; }
+.orange-bar .icon{ width: 15px; margin-right: 10px; }
+.orange-bar .bottom-inner{ font-size: 18px; height: 60px; display: flex; align-items: center; justify-content: center; text-align: center; color: #fff; }
 
 @media screen and (max-width: 1250px) {
     .orange-bar .bottom-inner{ font-size: 16px; }
 }
 @media screen and (max-width: 650px) {
     .orange-bar .bottom-inner{ font-size: 13px; }
+}
+@media screen and (max-width: 400px) {
+    .orange-bar .inner a{ font-size: 4vw; }
 }
 
 /* footer */
@@ -143,7 +146,7 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
     .main .article01 .title{ font-size: 40px; }
 }
 @media screen and (max-width: 650px) {
-    .main .article01 { background-image: url('../img/main/article01/mobile-background.png'); height: calc(100vh - 83px); background-size: 100% auto; background-position: bottom center;  }
+    .main .article01 { background-image: url('../img/main/article01/mobile-background.png'); height: calc(100vh - 83px); background-size: cover; background-position: bottom center;  }
     .main .article01 .title{ font-size: 7vw; }
 }
 
@@ -235,6 +238,7 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
 .main .article05 .item-list .item .contentBox .t2{ width: 100%; font-size: 21px; line-height: 1.5em; }
 .main .article05 .item-list .item .contentBox .t2 b{ font-weight: 700; }
 .main .center-text .orange{ color: #F50; }
+.main .article05 .center-text .orange{ font-size: 1.5em; }
 
 @media screen and (max-width: 1250px) {
     .main .main_t2{ font-size: 20px; }
@@ -259,6 +263,7 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
     .main .article05 .item-list .item .contentBox{ width: 100%; }
     .main .article05 .item-list .item .contentBox .step{ font-size: 14px; padding: 2px 10px; }
     .main .article05 .item-list .item .contentBox .t1{ font-size: 25px; }
+    .main .article05 .item-list .item .contentBox .t1 + .t2{ font-size: 21px; }
     .main .article05 .item-list .item .contentBox .t2{ font-size: 18px; }
 }
 
@@ -346,7 +351,7 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
 
 /* .main .countArti */
 .main .countArti{ padding: 100px 0; overflow: hidden; position: relative; background-image: url('../img/main/countArti/background.png'); background-size: cover; background-repeat: no-repeat; background-position: center; }
-.main .countArti .main_t1{ color: #fff; }
+.main .countArti .main_t1{ color: #fff; text-shadow: 2px 2px 1px rgba(0, 0, 0); }
 .main .countArti .main_t2{ color: #fff; }
 .main .countArti .count_list{ display: flex;  margin-top: 36px; width: calc(100% + 10px); margin-left: -5px; }
 .main .countArti .count_list > li{ width: calc(100% / 3); padding: 5px; }
