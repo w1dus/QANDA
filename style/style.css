@@ -138,7 +138,7 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
 
 /* .main .article01 */
 .main .article01{ padding:100px 0; background-color: #010101; background-image: url('../img/main/article01/background.png'); background-size: 100% auto; background-repeat: no-repeat; background-position: bottom center; height:calc(100vh - 109px); }
-.main .article01 .title{ margin-top: 10vw; line-height: 1.5em; font-size: 64px; text-align: center; color: #fff; font-family: 'Paperlogy'; }
+.main .article01 .title{ line-height: 1.5em; font-size: 64px; text-align: center; color: #fff; font-family: 'Paperlogy'; }
 .main .article01 .title b{ -webkit-text-fill-color: transparent; font-size: 1.1em; font-weight: 900; background: linear-gradient(92deg, #FB903B 9.96%, #EA5A0D 77.27%); background-clip: text; -webkit-background-clip: text; }
 @media screen and (max-width: 1250px) {
     .main .article01 { height: calc(100vh - 96px); }
@@ -146,7 +146,7 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
 }
 @media screen and (max-width: 650px) {
     .main .article01 { background-image: url('../img/main/article01/mobile-background.png'); height: calc(100vh - 83px); background-size: cover; background-position: bottom center;  }
-    .main .article01 .title{ font-size: 7vw; }
+    .main .article01 .title{  margin-top: 10vw; font-size: 7vw; }
 }
 
 /* .main .article02 */
