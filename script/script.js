@@ -6,9 +6,34 @@ document.addEventListener("DOMContentLoaded", function(e){
   article07_slide();
   testimonialSlide();
   qnaToggle();
-  videoStart();
+  //videoStart();
   countingNumberHandler();
+  windowResizeVideoStop();
 })
+
+const windowResizeVideoStop = () => {
+  const videoPc = document.getElementById('videoPc');
+  const videoMo = document.getElementById('videoMo');
+
+  // 화면 크기 변경 시 두 영상 모두 멈춤
+  window.addEventListener('resize', function () {
+    if (!videoPc.paused) videoPc.pause();
+    if (!videoMo.paused) videoMo.pause();
+  });
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const autoVideos = document.querySelectorAll('video[autoplay][muted][playsinline]');
+
+    autoVideos.forEach((video) => {
+      const playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise.catch((error) => {
+          console.log('Autoplay failed for a video:', error);
+        });
+      }
+    });
+  });
+}
 
 const videoStart = () => {
   const targetObserver = new MutationObserver(function (mutations) {
