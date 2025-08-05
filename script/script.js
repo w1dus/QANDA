@@ -9,7 +9,31 @@ document.addEventListener("DOMContentLoaded", function(e){
   //videoStart();
   countingNumberHandler();
   windowResizeVideoStop();
+  maximumSlide();
 })
+
+const maximumSlide = () => {
+  var swiper = new Swiper(".main .MaximumArti .mySwiper", {
+    slidesPerView: 2.5,
+    spaceBetween: 20,
+    centeredSlides: true,
+    loop: true,
+    breakpoints: {
+      450:{
+        slidesPerView: 1,
+      },
+      500:{
+        slidesPerView: 1.5,
+      },
+      640: {
+        slidesPerView: 1.6,
+      },
+      950: {
+        slidesPerView: 2.2,
+      },
+    },
+  });
+}
 
 const windowResizeVideoStop = () => {
   const videoPc = document.getElementById('videoPc');

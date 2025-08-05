@@ -95,8 +95,9 @@ header .menu{ display: none; }
 @media screen and (max-width: 650px) {
     .orange-bar .bottom-inner{ font-size: 18px; }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .orange-bar .inner a{ font-size: 4vw; }
+    .orange-bar .icon{ width: 3vw; }
 }
 
 /* footer */
@@ -232,6 +233,7 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
 .main .article05 .item-list .item.reverse  .contentBox{ align-items: flex-start; }
 .main .article05 .item-list .item .videoBox{ overflow: hidden; filter: drop-shadow(9.955px 12.799px 27.8px rgba(0, 0, 0, 0.15)); flex-shrink: 0; background-color: #dfdfdf; border-radius: 10px; width: 400px; flex-shrink: 0; border-radius: 20px;  }
 .main .article05 .item-list .item .videoBox video{ width: 100%; }
+.main .article05 .item-list .item .videoBox img{ width: 100%; }
 .main .article05 .item-list .item .contentBox{ display: flex; flex-direction: column; gap: 20px; align-items: flex-start; flex-grow: 1; }
 .main .article05 .item-list .item .contentBox .step{ font-weight: 700; background-color: #F50; color: #fff; font-size: 20px; padding: 4px 22px; }
 .main .article05 .item-list .item .contentBox .t1{ width: 100%; font-weight: 700; font-size: 40px; }
@@ -390,3 +392,51 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
 .privacyPopup .contentWrap .contentBox table td{ border: 1px solid #222; }
 .privacyPopup .contentWrap .contentBox table th{ font-weight: 600; }
 .privacyPopup .contentWrap .contentBox table td:first-child{ text-align: center; }
+
+
+
+.main .MaximumArti{ padding:100px 0; background-image: url('../img/main/MaximumArti/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; }
+.main .MaximumArti .mo{ display: none; }
+.main .MaximumArti .item_list{ margin-top: 70px; display: flex; width: calc(100% + 20px); margin-left: -10px; position:relative; }
+.main .MaximumArti .item_list > li{ width: calc(100% / 3); padding: 10px; }
+.main .MaximumArti .item_list .item{ display: flex; flex-direction: column; align-items: center; position: relative; padding: 55px 20px; padding-bottom: 30px; background-color: #fff; border: 4px solid #000; border-radius: 10px; height: 100%; }
+.main .MaximumArti .item_list .item .label{ position: absolute; right: -20px; top: -30px; }
+.main .MaximumArti .item_list .item .t1{ text-align: center; font-weight: 700; font-size: 32px; }
+.main .MaximumArti .item_list .item .price-box{ margin: 32px 0; background-color: #F5F5F5; padding: 10px; border-radius: 10px; display: flex; align-items: center; justify-content: center; gap: 12px; }
+.main .MaximumArti .item_list .item .price-box .real{ font-weight: 900; font-size: 54px; }
+.main .MaximumArti .item_list .item .price-box .del{ font-size: 42px; color: #e4e4e4; text-decoration: line-through; }
+.main .MaximumArti .item_list .item .centerbox{ text-align: center; font-size: 18px; display: flex; align-items: center; justify-content: center; gap: 20px; }
+.main .MaximumArti .item_list .item .time{ margin-top: 32px; border-radius: 8px; color: #fff; display: flex; font-size: 21px; align-items: center; justify-content: center; gap: 8px; background-color: #494747; padding: 12px 10px; }
+.main .MaximumArti .item_list .item.active { border-color: #F50; }
+.main .MaximumArti .item_list .item.active .time{ background-color: #F50; }
+.main .MaximumArti .item_list .item .top-title{ font-size: 24px; position: absolute; top: -20px; background: #F50; color: #fff; font-weight: 700; padding: 10px 15px; border-radius: 4px; }
+.main .MaximumArti .center-text{ margin: 50px 0; }
+.main .MaximumArti .btnWrap{ display: flex; align-items: center; justify-content: center; }
+.main .MaximumArti .btnWrap > a{ box-shadow: 2.737px 5.474px 5.474px 0 rgba(0, 0, 0, 0.15); padding: 16px 10px; max-width: 368px; font-weight: 18px; font-weight: 700; color: #fff; width: 100%; border-radius: 5.4px; background-color: #F50; display: flex; align-items: center; justify-content: center; gap: 10px; }
+.main .MaximumArti .mo{ display: none; }
+
+@media screen and (max-width: 1250px) {
+    .main .MaximumArti .item_list{ padding: 0 50px;}
+    .main .MaximumArti .item_list .item .t1{ font-size: 28px; }
+    .main .MaximumArti .item_list .item .price-box .real{ font-size: 40px; }
+    .main .MaximumArti .item_list .item .price-box .del{ font-size: 30px; }
+    .main .MaximumArti .item_list .item .time{ font-size: 18px; }
+    .main .MaximumArti .item_list .item .top-title{ font-size: 20px; padding: 5px 10px; }
+    .main .MaximumArti .item_list .item .label{ transform: scale(.8); right: -35px; top: -40px; }
+}
+@media screen and (max-width: 950px) {
+    .main .MaximumArti .mo{ display: block; }
+    .main .MaximumArti .pc{ display: none; }
+}
+@media screen and (max-width: 650px) {
+    .main .MaximumArti { padding: 50px 0; }
+    .main .MaximumArti .item_list .item{ border-width: 2px; padding-left: 10px; padding-right: 10px; }
+    .main .MaximumArti .item_list .item .t1{ font-size: 22px; }
+    .main .MaximumArti .item_list .item .price-box { width: 100%; }
+    .main .MaximumArti .item_list .item .price-box .real{ font-size: 30px; }
+    .main .MaximumArti .item_list .item .price-box .del{ font-size: 25px; }
+    .main .MaximumArti .item_list .item .centerbox{ font-size: 16px; gap: 10px; }
+    .main .MaximumArti .item_list .item .time{ font-size: 16px; width: 100%; }
+    .main .MaximumArti .item_list .item .time .icon{ width: 20px; }
+    .main .MaximumArti .item_list .item .top-title{ height: 7vw; width: 55%; text-align: center; font-size: 4vw; }
+}
