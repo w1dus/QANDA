@@ -438,5 +438,5 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
     .main .MaximumArti .item_list .item .centerbox{ font-size: 16px; gap: 10px; }
     .main .MaximumArti .item_list .item .time{ font-size: 16px; width: 100%; }
     .main .MaximumArti .item_list .item .time .icon{ width: 20px; }
-    .main .MaximumArti .item_list .item .top-title{ height: 7vw; width: 55%; text-align: center; font-size: 4vw; }
+    .main .MaximumArti .item_list .item .top-title{ top: -3.5vw; height: 7vw; width: 55%; text-align: center; font-size: 4vw; }
 }
