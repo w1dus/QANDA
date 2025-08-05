@@ -276,7 +276,7 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
 .main .article06 .phoneWrap{ z-index: 2; position: relative; margin-top: 60px; display: flex; align-items: center; justify-content: center; }
 .main .article06 .phoneWrap .background{ max-width: 150%; position: absolute; }
 .main .article06 .phoneWrap .phoneBox{ border-radius: 45px; overflow: hidden; position: relative; }
-.main .article06 .phoneWrap .phone{ width: calc(100% + 7px); left: -6px;  height: 100%; position: absolute; }
+.main .article06 .phoneWrap .phone{ width: calc(100% + 7px); left: -6px;  height: 100.4%; position: absolute; }
 .main .article06 .phoneWrap .video{ width: 274px; }
 @media screen and (max-width: 650px) {
     .main .article06 .phoneWrap .video{ width: 70vw; }
