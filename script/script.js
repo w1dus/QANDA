@@ -26,6 +26,16 @@ const clickToVideoPlay = () => {
       $videoMo.play();
     }
   });
+  
+    // 영상이 재생되면 안내 문구 숨기기 (PC 영상)
+    $videoPc.addEventListener("play", function() {
+      $trigger.hide();
+    });
+  
+    // 영상이 재생되면 안내 문구 숨기기 (모바일 영상)
+    $videoMo.addEventListener("play", function() {
+      $trigger.hide();
+    });
 }
 
 const maximumSlide = () => {
