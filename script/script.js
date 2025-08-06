@@ -10,7 +10,23 @@ document.addEventListener("DOMContentLoaded", function(e){
   countingNumberHandler();
   windowResizeVideoStop();
   maximumSlide();
+  clickToVideoPlay();
 })
+
+const clickToVideoPlay = () => {
+  var $trigger = $(".main .article03 .video-infomaion");
+  var $videoPc = $("#videoPc").get(0); // DOM 요소
+  var $videoMo = $("#videoMo").get(0);
+
+  $trigger.on("click", function() {
+    $trigger.hide();  // jQuery hide() = display: none
+    if (window.innerWidth > 650) {
+      $videoPc.play();
+    } else {
+      $videoMo.play();
+    }
+  });
+}
 
 const maximumSlide = () => {
   var swiper = new Swiper(".main .MaximumArti .mySwiper", {

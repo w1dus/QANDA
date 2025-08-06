@@ -138,9 +138,11 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
 }
 
 /* .main .article01 */
-.main .article01{ padding:100px 0; background-color: #010101; background-image: url('../img/main/article01/background.png'); background-size: 100% auto; background-repeat: no-repeat; background-position: bottom center; height:calc(100vh - 109px); }
+.main .article01{ position: relative; padding:100px 0; background-color: #010101; background-image: url('../img/main/article01/background.png'); background-size: 100% auto; background-repeat: no-repeat; background-position: bottom center; height:calc(100vh - 109px); }
 .main .article01 .title{ line-height: 1.5em; font-size: 64px; text-align: center; color: #fff; font-family: 'Paperlogy'; }
 .main .article01 .title b{ -webkit-text-fill-color: transparent; font-size: 1.1em; font-weight: 900; background: linear-gradient(92deg, #FB903B 9.96%, #EA5A0D 77.27%); background-clip: text; -webkit-background-clip: text; }
+
+.main .article01 .scroll-box{ position: absolute; bottom: 20px; color: #fff; display: flex; flex-direction: column; gap: 10px; align-items: center; justify-content: center; width: 100%; left: 0; }
 @media screen and (max-width: 1250px) {
     .main .article01 { height: calc(100vh - 96px); }
     .main .article01 .title{ font-size: 40px; }
@@ -148,6 +150,7 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
 @media screen and (max-width: 650px) {
     .main .article01 { background-image: url('../img/main/article01/mobile-background.png'); height: calc(100vh - 83px); background-size: cover; background-position: bottom center;  }
     .main .article01 .title{  margin-top: 10vw; font-size: 7vw; }
+    .main .article01 .scroll-box .arrow{ width: 20px; }
 }
 
 /* .main .article02 */
@@ -157,8 +160,16 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
 
 
 /* .main .article03 */
+.main .article03{ position: relative; overflow: hidden; }
 .main .article03 video{ width: 100%; object-fit: cover; }
 .main .article03 video.mo{ display: none; }
+.main .article03 .video-infomaion{ z-index: 9; font-size: 50px; font-weight: 600; padding: 40px 0; position: absolute; left: 0; top: 0; width: 100%; display: flex; align-items: center; justify-content: center; }
+@media screen and (max-width: 1250px) {
+    .main .article03 .video-infomaion{ font-size: 40px; }
+}
+@media screen and (max-width: 950px) {
+    .main .article03 .video-infomaion{ padding: 15vw 0; font-size: 30px; }
+}
 /* @media screen and (max-width: 1250px) {
     .main .article03 { height: calc(100vh - 96px); }
 }
@@ -401,7 +412,7 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
 .main .MaximumArti .item_list{ margin-top: 70px; display: flex; width: calc(100% + 20px); margin-left: -10px; position:relative; }
 .main .MaximumArti .item_list > li{ width: calc(100% / 3); padding: 10px; }
 .main .MaximumArti .item_list .item{ display: flex; flex-direction: column; align-items: center; position: relative; padding: 55px 20px; padding-bottom: 30px; background-color: #fff; border: 4px solid #000; border-radius: 10px; height: 100%; }
-.main .MaximumArti .item_list .item .label{ position: absolute; right: -20px; top: -30px; }
+.main .MaximumArti .item_list .item .label{ position: absolute; right: -30px; top: -50px; width: 140px;  }
 .main .MaximumArti .item_list .item .t1{ text-align: center; font-weight: 700; font-size: 32px; }
 .main .MaximumArti .item_list .item .price-box{ margin: 32px 0; background-color: #F5F5F5; padding: 10px; border-radius: 10px; display: flex; align-items: center; justify-content: center; gap: 12px; }
 .main .MaximumArti .item_list .item .price-box .real{ font-weight: 900; font-size: 54px; }
@@ -423,7 +434,7 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
     .main .MaximumArti .item_list .item .price-box .del{ font-size: 30px; }
     .main .MaximumArti .item_list .item .time{ font-size: 18px; }
     .main .MaximumArti .item_list .item .top-title{ font-size: 20px; padding: 5px 10px; }
-    .main .MaximumArti .item_list .item .label{ transform: scale(.8); right: -35px; top: -40px; }
+    .main .MaximumArti .item_list .item .label{ transform: scale(.6); right: -52px; top: -54px; }
 }
 @media screen and (max-width: 950px) {
     .main .MaximumArti .mo{ display: block; }
@@ -440,6 +451,9 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
     .main .MaximumArti .item_list .item .time{ font-size: 16px; width: 100%; }
     .main .MaximumArti .item_list .item .time .icon{ width: 20px; }
     .main .MaximumArti .item_list .item .top-title{  top: -3.5vw; height: 7vw; width: 55%; text-align: center; font-size: 4vw; }
-    .main .MaximumArti .item_list .item .label{ right: -28px; top:-30px }
-    .main .MaximumArti .item_list .item.active .label{ top: -40px; right: -43px; transform: scale(.7); }
+    .main .MaximumArti .item_list .item .label{ top: -40px; right: -43px; transform: scale(.7); }
 }
+@media screen and (max-width: 450px) {
+    .main .MaximumArti .item_list .item .top-title{ height: 9vw;  font-size: 5vw;}
+}
+
