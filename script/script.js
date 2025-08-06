@@ -19,13 +19,13 @@ const clickToVideoPlay = () => {
   var videoPc = $("#videoPc").get(0); // DOM 요소
   var videoMo = $("#videoMo").get(0);
 
-  // PC 썸네일 클릭 시
+  // PC 썸네일 클릭 시 영상 재생 및 썸네일 숨기기
   $thumbPc.on("click", function() {
     $thumbPc.hide();
     videoPc.play();
   });
 
-  // 모바일 썸네일 클릭 시
+  // 모바일 썸네일 클릭 시 영상 재생 및 썸네일 숨기기
   $thumbMo.on("click", function() {
     $thumbMo.hide();
     videoMo.play();
@@ -39,6 +39,24 @@ const clickToVideoPlay = () => {
   // 영상 재생 시 썸네일 숨기기 (모바일)
   videoMo.addEventListener("play", function() {
     $thumbMo.hide();
+  });
+
+  // PC 영상 터치(클릭)로 재생/일시정지 토글
+  $("#videoPc").on("click", function() {
+    if (videoPc.paused) {
+      videoPc.play();
+    } else {
+      videoPc.pause();
+    }
+  });
+
+  // 모바일 영상 터치(클릭)로 재생/일시정지 토글
+  $("#videoMo").on("click", function() {
+    if (videoMo.paused) {
+      videoMo.play();
+    } else {
+      videoMo.pause();
+    }
   });
 };
 
