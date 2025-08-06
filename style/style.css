@@ -160,7 +160,7 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
 
 
 /* .main .article03 */
-.main .article03{ position: relative; overflow: hidden; }
+.main .article03{ aspect-ratio: 16 / 9; position: relative; overflow: hidden; }
 .main .article03 video{ width: 100%; object-fit: cover; }
 .main .article03 video.mo{ display: none; }
 .main .article03 .video-infomaion{ z-index: 9; font-size: 50px; font-weight: 600; padding: 40px 0; position: absolute; left: 0; top: 0; width: 100%; display: flex; align-items: center; justify-content: center; }
@@ -173,6 +173,7 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
     .main .article03 .video-infomaion{ font-size: 40px; }
 }
 @media screen and (max-width: 950px) {
+    .main .article03{ aspect-ratio: 9 / 16; }
     .main .article03 .video-infomaion{ padding: 15vw 0; font-size: 30px; }
 }
 /* @media screen and (max-width: 1250px) {
