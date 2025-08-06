@@ -14,29 +14,34 @@ document.addEventListener("DOMContentLoaded", function(e){
 })
 
 const clickToVideoPlay = () => {
-  var $trigger = $(".main .article03 .video-infomaion");
-  var $videoPc = $("#videoPc").get(0); // DOM 요소
-  var $videoMo = $("#videoMo").get(0);
+  var $thumbPc = $(".main .article03 #thumbPc");
+  var $thumbMo = $(".main .article03 #thumbMo");
+  var videoPc = $("#videoPc").get(0); // DOM 요소
+  var videoMo = $("#videoMo").get(0);
 
-  $trigger.on("click", function() {
-    $trigger.hide();  // jQuery hide() = display: none
-    if (window.innerWidth > 650) {
-      $videoPc.play();
-    } else {
-      $videoMo.play();
-    }
+  // PC 썸네일 클릭 시
+  $thumbPc.on("click", function() {
+    $thumbPc.hide();
+    videoPc.play();
   });
-  
-    // 영상이 재생되면 안내 문구 숨기기 (PC 영상)
-    $videoPc.addEventListener("play", function() {
-      $trigger.hide();
-    });
-  
-    // 영상이 재생되면 안내 문구 숨기기 (모바일 영상)
-    $videoMo.addEventListener("play", function() {
-      $trigger.hide();
-    });
-}
+
+  // 모바일 썸네일 클릭 시
+  $thumbMo.on("click", function() {
+    $thumbMo.hide();
+    videoMo.play();
+  });
+
+  // 영상 재생 시 썸네일 숨기기 (PC)
+  videoPc.addEventListener("play", function() {
+    $thumbPc.hide();
+  });
+
+  // 영상 재생 시 썸네일 숨기기 (모바일)
+  videoMo.addEventListener("play", function() {
+    $thumbMo.hide();
+  });
+};
+
 
 const maximumSlide = () => {
   var swiper = new Swiper(".main .MaximumArti .mySwiper", {
