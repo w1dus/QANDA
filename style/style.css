@@ -173,7 +173,7 @@ footer .box3 .logo-list{ margin-top: 20px; display: flex; align-items: center; g
     .main .article03 .video-infomaion{ font-size: 40px; }
 }
 @media screen and (max-width: 950px) {
-    .main .article03{ aspect-ratio: 9 / 16; }
+    .main .article03{ aspect-ratio: 9 / 20; }
     .main .article03 .video-infomaion{ padding: 15vw 0; font-size: 30px; }
 }
 /* @media screen and (max-width: 1250px) {
