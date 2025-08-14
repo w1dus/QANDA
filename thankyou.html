@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QANDA - Thankyou Page </title>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-M7Q9ZLPF');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '719865637542309');
+      fbq('track', 'PageView');
+      </script>
+      <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=719865637542309&ev=PageView&noscript=1"
+      /></noscript>
+    <!-- End Meta Pixel Code -->
+    <!--스타일-->
+    <link rel="stylesheet" href="./style/default.css">
+    <link rel="stylesheet" href="./style/font.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/swiper.min.css">
+    <link rel="stylesheet" href="./style/animation.css">
+    <link rel="stylesheet" href="./style/customBoard.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
+    />
+    <title>Thank You - Vercel HTML Starter</title>
+    <meta
+      name="description"
+      content="Thank you page for the Vercel HTML Starter template."
+    />
+  </head>
+      <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7Q9ZLPF"
+          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <article class="thankArti">
+      <h1 class="thank_title">Thanks, you’re all set.</h1>
+      <!-- <p>LFG steven! 🚀</p> -->
+      <p class="thank_content">
+        You’re welcome to contact us, but if all our consulting specialists are engaged,  
+        we may not be able to take your call right now.  
+        Don’t worry - we’ll get back to you as soon as possible!
+      </p>
+      <p class="thank_call">
+        <a href="tel:+18557284551" style="color:rgb(255,85,0)">CALL +1 (855) 728-4551</a>
+      </p>
+      <img src="./img/common/black-logo.png" alt="QANDA" class="thank_logo">
+      <p class="back_link"><a href="/">← Back to Home</a></p>
+    </article>
+
+    <script>
+      // 페이지 로드 시 자동으로 실행
+      document.addEventListener('DOMContentLoaded', function() {
+        console.log('Page loaded - tracking events');
+        
+        //1. Google Tag Manager dataLayer
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          'event': 'inbound_call_button',
+          'product_name': 'SAT'
+        });
+
+        //2. Meta Pixel
+        fbq('trackCustom', 'complete_action'); 
+      });
+    </script>
+  </body>
+</html>

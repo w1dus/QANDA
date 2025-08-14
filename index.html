@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+                <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, user-scalable=no">
+        <title>QANDA - 1on1 SAT Tutoring</title>
+        <!-- Google Tag Manager -->
+        <script>
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-M7Q9ZLPF');
+        </script>
+        <!-- End Google Tag Manager -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!--스타일-->
         <link rel="stylesheet" href="./style/default.css">
@@ -23,21 +33,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
         <!--yotube background-->
         <script src="https://unpkg.com/youtube-background@1.0.14/jquery.youtube-background.min.js"></script>
-
-        
-        <!-- Google Tag Manager --> 
-        <script>
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-M7Q9ZLPF');
-        </script>
-        <!-- End Google Tag Manager -->
-        <script type="text/javascript" src="//wcs.naver.net/wcslog.js"> </script> <script type="text/javascript">
-            if (!wcs_add) var wcs_add={};
-            wcs_add["wa"] = "s_55a6ba809b74";
-            if (!_nasa) var _nasa={}; if(window.wcs){ wcs.inflow();
-            wcs_do();
-            } 
-        </script>
         <!-- Meta Pixel Code -->
         <script>
             !function(f,b,e,v,n,t,s)
@@ -51,12 +46,23 @@
             fbq('init', '719865637542309');
             fbq('track', 'PageView');
         </script>
-        <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=719865637542309&ev=PageView&noscript=1" /></noscript>
+        <noscript>
+            <img height="1" width="1" style="display:none"src="https://www.facebook.com/tr?id=719865637542309&ev=PageView&noscript=1"/>
+        </noscript>
         <!-- End Meta Pixel Code -->
-    </head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KZ12F8P98"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-3KZ12F8P98');
+        </script>
+        </head>
     <body>
         <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPXG4K5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7Q9ZLPF"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
         <header>
             <div class="inner top-inner">
@@ -68,7 +74,7 @@
                     <li><a href="./index.html#aiagent" class="scroll_move">AI agent</a></li>
                     <!-- <li><a href="./index.html#satexpert" class="scroll_move">SAT Expert</a></li> -->
                     <li><a href="./index.html#pricingplan" class="scroll_move">Pricing Plan</a></li>
-                    <!-- <li><a href="./index.html#testimonials" class="scroll_move">Testimonials</a></li> -->
+                    <li><a href="./index.html#testimonials" class="scroll_move">Testimonials</a></li>
                 </ul>
                 <button type="button" class="menu">
                     <img src="../img/common/menu-icon.svg" alt="menu" class="icon" />
@@ -76,9 +82,23 @@
             </div>
             <section class="orange-bar">
                 <div class="inner bottom-inner">
-                    <a href="tel:+18557284551">🔥 Get up to 27% OFF Now ! <img src="./img/common/call-icon.png" alt="call" class="icon"> CALL 1(855) 728-4551 </a>
+                    <a href="tel:+18557284551" onClick="handleCallClick();">🔥 Get up to 27% OFF Now ! <img src="./img/common/call-icon.png" alt="call" class="icon"> CALL 1(855) 728-4551 </a>
                 </div>
             </section>
+            <script>
+                function handleCallClick() {
+                    console.log('handleCallClick');
+                    // Facebook Pixel tracking
+                    fbq('trackCustom', 'call_button');
+
+                    // Google Tag Manager dataLayer
+                    window.dataLayer = window.dataLayer || [];
+                    window.dataLayer.push({
+                        'event': 'inbound_call_button',
+                        'product_name': 'SAT'
+                    });
+                }
+            </script> 
         </header>
         <section class="close-menu-bg"></section>
         <section class="right-slide-menu">
@@ -332,7 +352,7 @@
                             </div>
                         </div>
                     </article>
-                    <!--
+                    
                     <article class="article07 ani"id="satexpert">
                         <div class="inner">
                             <div class="main_t1">
@@ -341,63 +361,641 @@
                             <div class="main_t2">Learn from the best of best.</div>
                             <div class="swiper mySwiper">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
+                                    <div class="swiper-slide Berkeley">
                                         <div class="item">
-                                            <div class="profile" style="background-image: url('./img/main/article07/example.png');"></div>
+                                            <div class="profile"></div>
+                                            <ul class="intro">
+                                                <li>
+                                                    <div class="name">Peter Chan</div>
+                                                    <div class="university">University of California, Berkeley</div>
+                                                    <div class="major">Industrial Engineering and <br/>Operations Research</div>
+                                                </li>
+                                            </ul>
                                             <ul class="content">
-                                                <li><div class="label">Name</div><div class="text">Sean</div></li>
-                                                <li><div class="label">School</div><div class="text">Sean</div></li>
-                                                <li><div class="label">SAT Score</div><div class="text">Sean</div></li>
-                                                <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li>
+                                                <li><div class="label">Scores</div><div class="text">SAT 1590</div></li>
+                                                <li><div class="label">Subject</div><div class="text">R/W, MATH</div></li>
+                                                <li><div class="label">Experience</div><div class="text">7+ years</div></li>
+                                                <!-- <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li> -->
                                             </ul>
                                             <div class="tag-list">
-                                                <div class="tag green">#FIRM</div>
-                                                <div class="tag orange">#Smart style</div>
+                                                <div class="tag tag1">#Smart style</div>
+                                                <div class="tag tag2">#Firm</div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide">
+                                    <div class="swiper-slide Seoul">
                                         <div class="item">
-                                            <div class="profile" style="background-image: url('./img/main/article07/example.png');"></div>
+                                            <div class="profile"></div>
+                                            <ul class="intro">
+                                                <li>
+                                                    <div class="name">Young-Eun Kwon</div>
+                                                    <div class="university">Seoul National University</div>
+                                                    <div class="major">Economics <br/></div>
+                                                </li>
+                                            </ul>
                                             <ul class="content">
-                                                <li><div class="label">Name</div><div class="text">Sean</div></li>
-                                                <li><div class="label">School</div><div class="text">Sean</div></li>
-                                                <li><div class="label">SAT Score</div><div class="text">Sean</div></li>
-                                                <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li>
+                                                <li><div class="label">Scores</div><div class="text">SAT 1570</div></li>
+                                                <li><div class="label">Subject</div><div class="text">R/W, MATH</div></li>
+                                                <li><div class="label">Experience</div><div class="text">7+ years</div></li>
+                                                <!-- <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li> -->
                                             </ul>
                                             <div class="tag-list">
-                                                <div class="tag green">#FIRM</div>
-                                                <div class="tag orange">#Smart style</div>
+                                                <div class="tag tag1">#Mentoring</div>
+                                                <div class="tag tag2">#friendly</div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide">
+                                    <div class="swiper-slide Johns tpye1">
                                         <div class="item">
-                                            <div class="profile" style="background-image: url('./img/main/article07/example.png');"></div>
+                                            <div class="profile"></div>
+                                            <ul class="intro">
+                                                <li>
+                                                    <div class="name">Ben Ramsay</div>
+                                                    <div class="university">Johns Hopkins University</div>
+                                                    <div class="major">Biomedical Engineering, Applied <br/> Math and Statistics, Computer Science</div>
+                                                </li>
+                                            </ul>
                                             <ul class="content">
-                                                <li><div class="label">Name</div><div class="text">Sean</div></li>
-                                                <li><div class="label">School</div><div class="text">Sean</div></li>
-                                                <li><div class="label">SAT Score</div><div class="text">Sean</div></li>
-                                                <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li>
+                                                <li><div class="label">Scores</div><div class="text">SAT 1560 / ACT 35</div></li>
+                                                <li><div class="label">Subject</div><div class="text">MATH</div></li>
+                                                <li><div class="label">Experience</div><div class="text">7+ years</div></li>
+                                                <!-- <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li> -->
                                             </ul>
                                             <div class="tag-list">
-                                                <div class="tag green">#FIRM</div>
-                                                <div class="tag orange">#Smart style</div>
+                                                <div class="tag tag1">#Strict</div>
+                                                <div class="tag tag2">#Cramming</div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide">
+                                    <div class="swiper-slide SanDiego tpye1">
                                         <div class="item">
-                                            <div class="profile" style="background-image: url('./img/main/article07/example.png');"></div>
+                                            <div class="profile"></div>
+                                            <ul class="intro">
+                                                <li>
+                                                    <div class="name">Derek Cantor</div>
+                                                    <div class="university">University of California, San Diego</div>
+                                                    <div class="major">Mathematics B.S.</div>
+                                                </li>
+                                            </ul>
                                             <ul class="content">
-                                                <li><div class="label">Name</div><div class="text">Sean</div></li>
-                                                <li><div class="label">School</div><div class="text">Sean</div></li>
-                                                <li><div class="label">SAT Score</div><div class="text">Sean</div></li>
-                                                <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li>
+                                                <li><div class="label">Scores</div><div class="text">SAT 1560 / ACT : 36</div></li>
+                                                <li><div class="label">Subject</div><div class="text">MATH</div></li>
+                                                <li><div class="label">Experience</div><div class="text">1~3 years</div></li>
+                                                <!-- <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li> -->
                                             </ul>
                                             <div class="tag-list">
-                                                <div class="tag green">#FIRM</div>
-                                                <div class="tag orange">#Smart style</div>
+                                                <div class="tag tag1">#FIRM</div>
+                                                <div class="tag tag2">#Performance-oriented</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide Hong_Kong">
+                                        <div class="item">
+                                            <div class="profile"></div>
+                                            <ul class="intro">
+                                                <li>
+                                                    <div class="name">Hyunkyu Song</div>
+                                                    <div class="university">The Hong Kong University of <br/>Science and Technology</div>
+                                                    <div class="major">Data Science + AI</div>
+                                                </li>
+                                            </ul>
+                                            <ul class="content">
+                                                <li><div class="label">Scores</div><div class="text">SAT 1560</div></li>
+                                                <li><div class="label">Subject</div><div class="text">R/W, MATH</div></li>
+                                                <li><div class="label">Experience</div><div class="text">1~3 years</div></li>
+                                                <!-- <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li> -->
+                                            </ul>
+                                            <div class="tag-list">
+                                                <div class="tag tag1">#concentration</div>
+                                                <div class="tag tag2">#Calm</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide Yonsei">
+                                        <div class="item">
+                                            <div class="profile"></div>
+                                            <ul class="intro">
+                                                <li>
+                                                    <div class="name">Kelly (Suyun) Son</div>
+                                                    <div class="university">Yonsei University</div>
+                                                    <div class="major">International Studies</div>
+                                                </li>
+                                            </ul>
+                                            <ul class="content">
+                                                <li><div class="label">Scores</div><div class="text">SAT 1560</div></li>
+                                                <li><div class="label">Subject</div><div class="text">R/W, MATH</div></li>
+                                                <li><div class="label">Experience</div><div class="text">1~3 years</div></li>
+                                                <!-- <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li> -->
+                                            </ul>
+                                            <div class="tag-list">
+                                                <div class="tag tag1">#Consulting</div>
+                                                <div class="tag tag2">#Meticulous</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide California">
+                                        <div class="item">
+                                            <div class="profile"></div>
+                                            <ul class="intro">
+                                                <li>
+                                                    <div class="name">Rochelle Cruse</div>
+                                                    <div class="university">California State University</div>
+                                                    <div class="major">Psychology</div>
+                                                </li>
+                                            </ul>
+                                            <ul class="content">
+                                                <li><div class="label">Scores</div><div class="text">SAT 1560</div></li>
+                                                <li><div class="label">Subject</div><div class="text">R/W, MATH</div></li>
+                                                <li><div class="label">Experience</div><div class="text">1~3 years</div></li>
+                                                <!-- <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li> -->
+                                            </ul>
+                                            <div class="tag-list">
+                                                <div class="tag tag1">#Performance-oriented</div>
+                                                <div class="tag tag2">#Calm</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide KAIST">
+                                        <div class="item">
+                                            <div class="profile"></div>
+                                            <ul class="intro">
+                                                <li>
+                                                    <div class="name">Hyunjong Kil</div>
+                                                    <div class="university">KAIST</div>
+                                                    <div class="major">Electrical Engineering</div>
+                                                </li>
+                                            </ul>
+                                            <ul class="content">
+                                                <li><div class="label">Scores</div><div class="text">SAT 1550</div></li>
+                                                <li><div class="label">Subject</div><div class="text">MATH</div></li>
+                                                <li><div class="label">Experience</div><div class="text">4~6 years</div></li>
+                                                <!-- <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li> -->
+                                            </ul>
+                                            <div class="tag-list">
+                                                <div class="tag tag1">#FIRM</div>
+                                                <div class="tag tag2">#Mentoring</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide KAIST">
+                                        <div class="item">
+                                            <div class="profile"></div>
+                                            <ul class="intro">
+                                                <li>
+                                                    <div class="name">Minseo (Evelyn) Kim</div>
+                                                    <div class="university">KAIST</div>
+                                                    <div class="major">Computer Science</div>
+                                                </li>
+                                            </ul>
+                                            <ul class="content">
+                                                <li><div class="label">Scores</div><div class="text">SAT 1550</div></li>
+                                                <li><div class="label">Subject</div><div class="text">R/W, MATH</div></li>
+                                                <li><div class="label">Experience</div><div class="text">4~6 years</div></li>
+                                                <!-- <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li> -->
+                                            </ul>
+                                            <div class="tag-list">
+                                                <div class="tag tag1">#friendly</div>
+                                                <div class="tag tag2">#Strict</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide Irvine">
+                                        <div class="item">
+                                            <div class="profile"></div>
+                                            <ul class="intro">
+                                                <li>
+                                                    <div class="name">Raymond Ouyang</div>
+                                                    <div class="university">University of California, Irvine</div>
+                                                    <div class="major">Computer Science</div>
+                                                </li>
+                                            </ul>
+                                            <ul class="content">
+                                                <li><div class="label">Scores</div><div class="text">SAT 1550</div></li>
+                                                <li><div class="label">Subject</div><div class="text">R/W, MATH</div></li>
+                                                <li><div class="label">Experience</div><div class="text">1 years</div></li>
+                                                <!-- <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li> -->
+                                            </ul>
+                                            <div class="tag-list">
+                                                <div class="tag tag1">#Meticulous</div>
+                                                <div class="tag tag2">#Smart style</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide Cornell">
+                                        <div class="item">
+                                            <div class="profile"></div>
+                                            <ul class="intro">
+                                                <li>
+                                                    <div class="name">Steve Jiang</div>
+                                                    <div class="university">Cornell University</div>
+                                                    <div class="major">Chemical Engineer</div>
+                                                </li>
+                                            </ul>
+                                            <ul class="content">
+                                                <li><div class="label">Scores</div><div class="text">SAT 1550</div></li>
+                                                <li><div class="label">Subject</div><div class="text">MATH</div></li>
+                                                <li><div class="label">Experience</div><div class="text">1~3 years</div></li>
+                                                <!-- <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li> -->
+                                            </ul>
+                                            <div class="tag-list">
+                                                <div class="tag tag1">#FIRM</div>
+                                                <div class="tag tag2">#Cramming</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide Northwestern tpye1">
+                                        <div class="item">
+                                            <div class="profile"></div>
+                                            <ul class="intro">
+                                                <li>
+                                                    <div class="name">Yena Chang</div>
+                                                    <div class="university">Northwestern University</div>
+                                                    <div class="major">Industrial engineering</div>
+                                                </li>
+                                            </ul>
+                                            <ul class="content">
+                                                <li><div class="label">Scores</div><div class="text">SAT 1550 / ACT 34</div></li>
+                                                <li><div class="label">Subject</div><div class="text">MATH</div></li>
+                                                <li><div class="label">Experience</div><div class="text">1 years</div></li>
+                                                <!-- <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li> -->
+                                            </ul>
+                                            <div class="tag-list">
+                                                <div class="tag tag1">#concentration</div>
+                                                <div class="tag tag2">#motivating</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide Yonsei">
+                                        <div class="item">
+                                            <div class="profile"></div>
+                                            <ul class="intro">
+                                                <li>
+                                                    <div class="name">Hyunmin No</div>
+                                                    <div class="university">Yonsei University</div>
+                                                    <div class="major">Electrical Engineering</div>
+                                                </li>
+                                            </ul>
+                                            <ul class="content">
+                                                <li><div class="label">Scores</div><div class="text">SAT 1540</div></li>
+                                                <li><div class="label">Subject</div><div class="text">MATH</div></li>
+                                                <li><div class="label">Experience</div><div class="text">1~3 years</div></li>
+                                                <!-- <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li> -->
+                                            </ul>
+                                            <div class="tag-list">
+                                                <div class="tag tag1">#Cramming</div>
+                                                <div class="tag tag2">#friendly</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide Vanderbilt">
+                                        <div class="item">
+                                            <div class="profile"></div>
+                                            <ul class="intro">
+                                                <li>
+                                                    <div class="name">Jungjun Kim</div>
+                                                    <div class="university">Vanderbilt University</div>
+                                                    <div class="major">Computer Science</div>
+                                                </li>
+                                            </ul>
+                                            <ul class="content">
+                                                <li><div class="label">Scores</div><div class="text">SAT 1540</div></li>
+                                                <li><div class="label">Subject</div><div class="text">MATH</div></li>
+                                                <li><div class="label">Experience</div><div class="text">1~3 years</div></li>
+                                                <!-- <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li> -->
+                                            </ul>
+                                            <div class="tag-list">
+                                                <div class="tag tag1">#concentration</div>
+                                                <div class="tag tag2">#encouraging</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide Illinois">
+                                        <div class="item">
+                                            <div class="profile"></div>
+                                            <ul class="intro">
+                                                <li>
+                                                    <div class="name">Junwon Min</div>
+                                                    <div class="university">University of Illinois Urbana-Champaign</div>
+                                                    <div class="major">Chemical Engineering</div>
+                                                </li>
+                                            </ul>
+                                            <ul class="content">
+                                                <li><div class="label">Scores</div><div class="text">SAT 1540</div></li>
+                                                <li><div class="label">Subject</div><div class="text">R/W, MATH</div></li>
+                                                <li><div class="label">Experience</div><div class="text">1~3 years</div></li>
+                                                <!-- <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li> -->
+                                            </ul>
+                                            <div class="tag-list">
+                                                <div class="tag tag1">#Smart style</div>
+                                                <div class="tag tag2">#Mentoring</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide Texas tpye1">
+                                        <div class="item">
+                                            <div class="profile"></div>
+                                            <ul class="intro">
+                                                <li>
+                                                    <div class="name">Kruti Rachapudi</div>
+                                                    <div class="university">University of Texas at Austin</div>
+                                                    <div class="major">Mechanical Engineering</div>
+                                                </li>
+                                            </ul>
+                                            <ul class="content">
+                                                <li><div class="label">Scores</div><div class="text">SAT 1540 / ACT 33</div></li>
+                                                <li><div class="label">Subject</div><div class="text">R/W, MATH</div></li>
+                                                <li><div class="label">Experience</div><div class="text">4~6 years</div></li>
+                                                <!-- <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li> -->
+                                            </ul>
+                                            <div class="tag-list">
+                                                <div class="tag tag1">#Strict</div>
+                                                <div class="tag tag2">#Mentoring</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide Korea">
+                                        <div class="item">
+                                            <div class="profile"></div>
+                                            <ul class="intro">
+                                                <li>
+                                                    <div class="name">Lizzy Choi</div>
+                                                    <div class="university">Korea University</div>
+                                                    <div class="major">Pharmacy</div>
+                                                </li>
+                                            </ul>
+                                            <ul class="content">
+                                                <li><div class="label">Scores</div><div class="text">SAT 1540 </div></li>
+                                                <li><div class="label">Subject</div><div class="text">R/W, MATH</div></li>
+                                                <li><div class="label">Experience</div><div class="text">1~3 years</div></li>
+                                                <!-- <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li> -->
+                                            </ul>
+                                            <div class="tag-list">
+                                                <div class="tag tag1">#concentration</div>
+                                                <div class="tag tag2">#Calm</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide Northwestern">
+                                        <div class="item">
+                                            <div class="profile"></div>
+                                            <ul class="intro">
+                                                <li>
+                                                    <div class="name">Ryan Park</div>
+                                                    <div class="university">Northwestern University</div>
+                                                    <div class="major">Economics</div>
+                                                </li>
+                                            </ul>
+                                            <ul class="content">
+                                                <li><div class="label">Scores</div><div class="text">ACT 35</div></li>
+                                                <li><div class="label">Subject</div><div class="text">MATH</div></li>
+                                                <li><div class="label">Experience</div><div class="text">1~3 years</div></li>
+                                                <!-- <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li> -->
+                                            </ul>
+                                            <div class="tag-list">
+                                                <div class="tag tag1">#Strict</div>
+                                                <div class="tag tag2">#Mentoring</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide Yonsei">
+                                        <div class="item">
+                                            <div class="profile"></div>
+                                            <ul class="intro">
+                                                <li>
+                                                    <div class="name">Seobin Im</div>
+                                                    <div class="university">Yonsei University</div>
+                                                    <div class="major">Biotechnology</div>
+                                                </li>
+                                            </ul>
+                                            <ul class="content">
+                                                <li><div class="label">Scores</div><div class="text">SAT 1540 </div></li>
+                                                <li><div class="label">Subject</div><div class="text">R/W, MATH</div></li>
+                                                <li><div class="label">Experience</div><div class="text">1~3 years</div></li>
+                                                <!-- <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li> -->
+                                            </ul>
+                                            <div class="tag-list">
+                                                <div class="tag tag1">#Meticulous</div>
+                                                <div class="tag tag2">#Consulting</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide Yonsei">
+                                        <div class="item">
+                                            <div class="profile"></div>
+                                            <ul class="intro">
+                                                <li>
+                                                    <div class="name">Dasom Kim</div>
+                                                    <div class="university">Yonsei University</div>
+                                                    <div class="major">Chemical Biomolecular Engineering</div>
+                                                </li>
+                                            </ul>
+                                            <ul class="content">
+                                                <li><div class="label">Scores</div><div class="text">SAT 1530</div></li>
+                                                <li><div class="label">Subject</div><div class="text">R/W, MATH</div></li>
+                                                <li><div class="label">Experience</div><div class="text">1~3 years</div></li>
+                                                <!-- <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li> -->
+                                            </ul>
+                                            <div class="tag-list">
+                                                <div class="tag tag1">#friendly</div>
+                                                <div class="tag tag2">#concentration</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide Singapore">
+                                        <div class="item">
+                                            <div class="profile"></div>
+                                            <ul class="intro">
+                                                <li>
+                                                    <div class="name">Hyewon Jeon</div>
+                                                    <div class="university">National University of Singapore</div>
+                                                    <div class="major">Data Science and Analytics</div>
+                                                </li>
+                                            </ul>
+                                            <ul class="content">
+                                                <li><div class="label">Scores</div><div class="text">SAT 1530</div></li>
+                                                <li><div class="label">Subject</div><div class="text">MATH</div></li>
+                                                <li><div class="label">Experience</div><div class="text">1~3 years</div></li>
+                                                <!-- <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li> -->
+                                            </ul>
+                                            <div class="tag-list">
+                                                <div class="tag tag1">#FIRM</div>
+                                                <div class="tag tag2">#concentration</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide Berkeley">
+                                        <div class="item">
+                                            <div class="profile"></div>
+                                            <ul class="intro">
+                                                <li>
+                                                    <div class="name">Hyungyu Ryu</div>
+                                                    <div class="university">University of California, Berkeley</div>
+                                                    <div class="major">Compueter Science and Appleid <br/> mathematics</div>
+                                                </li>
+                                            </ul>
+                                            <ul class="content">
+                                                <li><div class="label">Scores</div><div class="text">SAT 1530</div></li>
+                                                <li><div class="label">Subject</div><div class="text">MATH</div></li>
+                                                <li><div class="label">Experience</div><div class="text">1 years</div></li>
+                                                <!-- <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li> -->
+                                            </ul>
+                                            <div class="tag-list">
+                                                <div class="tag tag1">#motivating</div>
+                                                <div class="tag tag2">#Consulting</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide Toronto">
+                                        <div class="item">
+                                            <div class="profile"></div>
+                                            <ul class="intro">
+                                                <li>
+                                                    <div class="name">Juhan Choi</div>
+                                                    <div class="university">University of Toronto</div>
+                                                    <div class="major">Economics</div>
+                                                </li>
+                                            </ul>
+                                            <ul class="content">
+                                                <li><div class="label">Scores</div><div class="text">SAT 1530</div></li>
+                                                <li><div class="label">Subject</div><div class="text">R/W, MATH</div></li>
+                                                <li><div class="label">Experience</div><div class="text">1~3 years</div></li>
+                                                <!-- <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li> -->
+                                            </ul>
+                                            <div class="tag-list">
+                                                <div class="tag tag1">#Meticulous</div>
+                                                <div class="tag tag2">#Mentoring</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide Pennsylvania">
+                                        <div class="item">
+                                            <div class="profile"></div>
+                                            <ul class="intro">
+                                                <li>
+                                                    <div class="name">Lindsay Yao</div>
+                                                    <div class="university">University of Pennsylvania</div>
+                                                    <div class="major">Economics and Biophysics</div>
+                                                </li>
+                                            </ul>
+                                            <ul class="content">
+                                                <li><div class="label">Scores</div><div class="text">SAT 1530</div></li>
+                                                <li><div class="label">Subject</div><div class="text">R/W</div></li>
+                                                <li><div class="label">Experience</div><div class="text">4~6 years</div></li>
+                                                <!-- <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li> -->
+                                            </ul>
+                                            <div class="tag-list">
+                                                <div class="tag tag1">#Calm</div>
+                                                <div class="tag tag2">#Smart style</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide Yonsei">
+                                        <div class="item">
+                                            <div class="profile"></div>
+                                            <ul class="intro">
+                                                <li>
+                                                    <div class="name">Inseo Kim</div>
+                                                    <div class="university">Yonsei University</div>
+                                                    <div class="major">Chemical and Biomolecular Engineering</div>
+                                                </li>
+                                            </ul>
+                                            <ul class="content">
+                                                <li><div class="label">Scores</div><div class="text">SAT 1520</div></li>
+                                                <li><div class="label">Subject</div><div class="text">R/W, MATH</div></li>
+                                                <li><div class="label">Experience</div><div class="text">1~3 years</div></li>
+                                                <!-- <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li> -->
+                                            </ul>
+                                            <div class="tag-list">
+                                                <div class="tag tag1">#Cramming</div>
+                                                <div class="tag tag2">#Mentoring</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide KAIST">
+                                        <div class="item">
+                                            <div class="profile"></div>
+                                            <ul class="intro">
+                                                <li>
+                                                    <div class="name">Huh Yeokyung</div>
+                                                    <div class="university">KAIST</div>
+                                                    <div class="major">Biological Science, Chemistry</div>
+                                                </li>
+                                            </ul>
+                                            <ul class="content">
+                                                <li><div class="label">Scores</div><div class="text">SAT 1510</div></li>
+                                                <li><div class="label">Subject</div><div class="text">MATH</div></li>
+                                                <li><div class="label">Experience</div><div class="text">1~3 years</div></li>
+                                                <!-- <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li> -->
+                                            </ul>
+                                            <div class="tag-list">
+                                                <div class="tag tag1">#FIRM</div>
+                                                <div class="tag tag2">#Meticulous</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide Yonsei">
+                                        <div class="item">
+                                            <div class="profile"></div>
+                                            <ul class="intro">
+                                                <li>
+                                                    <div class="name">Ju Hee Bae</div>
+                                                    <div class="university">Yonsei University</div>
+                                                    <div class="major">UIC Economics</div>
+                                                </li>
+                                            </ul>
+                                            <ul class="content">
+                                                <li><div class="label">Scores</div><div class="text">SAT 1510</div></li>
+                                                <li><div class="label">Subject</div><div class="text">MATH</div></li>
+                                                <li><div class="label">Experience</div><div class="text">7+ years</div></li>
+                                                <!-- <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li> -->
+                                            </ul>
+                                            <div class="tag-list">
+                                                <div class="tag tag1">#encouraging</div>
+                                                <div class="tag tag2">#Strict</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide Colorado">
+                                        <div class="item">
+                                            <div class="profile"></div>
+                                            <ul class="intro">
+                                                <li>
+                                                    <div class="name">Alana Aamodt</div>
+                                                    <div class="university">Colorado College</div>
+                                                    <div class="major">Physics</div>
+                                                </li>
+                                            </ul>
+                                            <ul class="content">
+                                                <li><div class="label">Scores</div><div class="text">ACT 34</div></li>
+                                                <li><div class="label">Subject</div><div class="text">R/W, MATH</div></li>
+                                                <li><div class="label">Experience</div><div class="text">4~6 years</div></li>
+                                                <!-- <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li> -->
+                                            </ul>
+                                            <div class="tag-list">
+                                                <div class="tag tag1">#concentration</div>
+                                                <div class="tag tag2">#Consulting</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide Notre_Dame">
+                                        <div class="item">
+                                            <div class="profile"></div>
+                                            <ul class="intro">
+                                                <li>
+                                                    <div class="name">Emily Heydon</div>
+                                                    <div class="university">University of Notre Dame</div>
+                                                    <div class="major">Philosophy and Environmental Sciences</div>
+                                                </li>
+                                            </ul>
+                                            <ul class="content">
+                                                <li><div class="label">Scores</div><div class="text">ACT 34</div></li>
+                                                <li><div class="label">Subject</div><div class="text">R/W, MATH</div></li>
+                                                <li><div class="label">Experience</div><div class="text">1~3 years</div></li>
+                                                <!-- <li><div class="label">Subject <br/>Area</div><div class="text">Sean</div></li> -->
+                                            </ul>
+                                            <div class="tag-list">
+                                                <div class="tag tag1">#friendly</div>
+                                                <div class="tag tag2">#Smart style</div>
                                             </div>
                                         </div>
                                     </div>
@@ -408,7 +1006,7 @@
                             </div>
                         </div>
                     </article>
-                    -->
+                   
                     <article class="MaximumArti ani" id="pricingplan">
                         <div class="inner">
                             <div class="main_t1">Flexible Plans. <br class="moBr"/>Maximum Results.</div>
@@ -558,7 +1156,7 @@
                                 </b>
                             </div>
                             <div class="btnWrap">
-                                <a href="#"><div class="text">Build Your Own Plan</div><img src="./img/main/MaximumArti/right-arrow.svg" altt="오른쪽 화살표" class="icon" /></a>
+                                <a href="https://epz811nphq6.typeform.com/to/WYLOKA3I?utm_source={utm_source}&utm_medium={utm_medium}&utm_campaign={utm_campaign}&utm_content={utm_content}&utm_term={utm_term}" target="_blank"><div class="text">Build Your Own Plan</div><img src="./img/main/MaximumArti/right-arrow.svg" altt="오른쪽 화살표" class="icon" /></a>
                             </div>
                         </div>
                     </article>
@@ -593,13 +1191,12 @@
                                             <div class="count" data-count="100">100</div>
                                             <span class="small">M</span>+
                                         </div>
-                                        <div class="text">Regisgtered app users globally</div>
+                                        <div class="text">Registered app users globally</div>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                     </article>
-                    <!--
                     <article class="testimonialsArti ani" id="testimonials">
                         <div class="inner">
                             <div class="main_t1">
@@ -612,12 +1209,10 @@
                                             <div class="item">
                                                 <img src="./img/main/testimonialsArti/icon.png" alt='"' class="icon" /> 
                                                 <div class="text">
-                                                    “QANDA helped me <br/>
-                                                    boost my SAT score by <br/>
-                                                    180 points in just 3 weeks!”
+                                                    “QANDA helped me boost my SAT score by 180 points in just 3 weeks!”
                                                 </div>
                                                 <div class="profile">
-                                                    <div class="imgbox">S</div>
+                                                    <div class="imgbox" style="background-color: #E0E7FF; color: #4338CA;">S</div>
                                                     <div class="content">
                                                         <div class="real">Sarah J.</div> 
                                                         <div class="category">Student</div>
@@ -629,14 +1224,27 @@
                                             <div class="item">
                                                 <img src="./img/main/testimonialsArti/icon.png" alt='"' class="icon" /> 
                                                 <div class="text">
-                                                    “QANDA helped me <br/>
-                                                    boost my SAT score by <br/>
-                                                    180 points in just 3 weeks!”
+                                                    “My daughter went from 1250 to 1420 in a month. Her tutor was amazing.”
                                                 </div>
                                                 <div class="profile">
-                                                    <div class="imgbox">S</div>
+                                                    <div class="imgbox" style="background-color: #DCFCE7; color: #166534;">G</div>
                                                     <div class="content">
-                                                        <div class="real">Sarah J.</div>
+                                                        <div class="real">Grace K.</div>
+                                                        <div class="category">Parent</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <img src="./img/main/testimonialsArti/icon.png" alt='"' class="icon" /> 
+                                                <div class="text">
+                                                    “Being able to ask questions in real time changed everything for me.”
+                                                </div>
+                                                <div class="profile">
+                                                    <div class="imgbox" style="background-color: ; color: ;">E</div>
+                                                    <div class="content">
+                                                        <div class="real">Ethan C.</div>
                                                         <div class="category">Student</div>
                                                     </div>
                                                 </div>
@@ -646,14 +1254,12 @@
                                             <div class="item">
                                                 <img src="./img/main/testimonialsArti/icon.png" alt='"' class="icon" /> 
                                                 <div class="text">
-                                                    “QANDA helped me <br/>
-                                                    boost my SAT score by <br/>
-                                                    180 points in just 3 weeks!”
+                                                    “The voice + handwriting feature made it so easy to get help when I needed it.”
                                                 </div>
                                                 <div class="profile">
-                                                    <div class="imgbox">S</div>
+                                                    <div class="imgbox" style="background-color: #E0E7FF; color: #4338CA;">A</div>
                                                     <div class="content">
-                                                        <div class="real">Sarah J.</div>
+                                                        <div class="real">Ava L.</div>
                                                         <div class="category">Student</div>
                                                     </div>
                                                 </div>
@@ -663,14 +1269,237 @@
                                             <div class="item">
                                                 <img src="./img/main/testimonialsArti/icon.png" alt='"' class="icon" /> 
                                                 <div class="text">
-                                                    “QANDA helped me <br/>
-                                                    boost my SAT score by <br/>
-                                                    180 points in just 3 weeks!”
+                                                    “We tried other platforms, but QANDA was the only one that felt truly personalized.”
                                                 </div>
                                                 <div class="profile">
-                                                    <div class="imgbox">S</div>
+                                                    <div class="imgbox" style="background-color: #DCFCE7; color: #166534;">D</div>
                                                     <div class="content">
-                                                        <div class="real">Sarah J.</div>
+                                                        <div class="real">Daniel S.</div>
+                                                        <div class="category">Parent</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <img src="./img/main/testimonialsArti/icon.png" alt='"' class="icon" /> 
+                                                <div class="text">
+                                                    “My QANDA tutor actually cared. They pushed me just enough to grow.”
+                                                </div>
+                                                <div class="profile">
+                                                    <div class="imgbox" style="background-color: ; color: ;">K</div>
+                                                    <div class="content">
+                                                        <div class="real">Kevin Y.</div>
+                                                        <div class="category">Student</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <img src="./img/main/testimonialsArti/icon.png" alt='"' class="icon" /> 
+                                                <div class="text">
+                                                    “My son’s confidence skyrocketed after working with his QANDA tutor.”
+                                                </div>
+                                                <div class="profile">
+                                                    <div class="imgbox" style="background-color: #E0E7FF; color: #4338CA;">O</div>
+                                                    <div class="content">
+                                                        <div class="real">Olivia R.</div>
+                                                        <div class="category">Parent</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <img src="./img/main/testimonialsArti/icon.png" alt='"' class="icon" /> 
+                                                <div class="text">
+                                                    “The adaptive training helped me focus only on what I really needed.”
+                                                </div>
+                                                <div class="profile">
+                                                    <div class="imgbox" style="background-color: #DCFCE7; color: #166534;">E</div>
+                                                    <div class="content">
+                                                        <div class="real">Emily T.</div>
+                                                        <div class="category">Student</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <img src="./img/main/testimonialsArti/icon.png" alt='"' class="icon" /> 
+                                                <div class="text">
+                                                    “Getting live feedback from my tutor helped me improve fast.”
+                                                </div>
+                                                <div class="profile">
+                                                    <div class="imgbox" style="background-color: ; color: ;">L</div>
+                                                    <div class="content">
+                                                        <div class="real">Lucas P.</div>
+                                                        <div class="category">Student</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <img src="./img/main/testimonialsArti/icon.png" alt='"' class="icon" /> 
+                                                <div class="text">
+                                                    “I never thought studying for the SAT could feel this efficient.”
+                                                </div>
+                                                <div class="profile">
+                                                    <div class="imgbox" style="background-color: #E0E7FF; color: #4338CA;">H</div>
+                                                    <div class="content">
+                                                        <div class="real">Hannah M.</div>
+                                                        <div class="category">Student</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <img src="./img/main/testimonialsArti/icon.png" alt='"' class="icon" /> 
+                                                <div class="text">
+                                                    “QANDA is like having a private SAT tutor, but smarter.”
+                                                </div>
+                                                <div class="profile">
+                                                    <div class="imgbox" style="background-color: #DCFCE7; color: rgba(22, 101, 52, 1);">J</div>
+                                                    <div class="content">
+                                                        <div class="real">Jason L.</div>
+                                                        <div class="category">Student</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <img src="./img/main/testimonialsArti/icon.png" alt='"' class="icon" /> 
+                                                <div class="text">
+                                                    “I loved the flexibility — my daughter could study anytime, anywhere.”
+                                                </div>
+                                                <div class="profile">
+                                                    <div class="imgbox" style="background-color: ; color: ;">S</div>
+                                                    <div class="content">
+                                                        <div class="real">Sophia K.</div>
+                                                        <div class="category">Parent</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <img src="./img/main/testimonialsArti/icon.png" alt='"' class="icon" /> 
+                                                <div class="text">
+                                                    “In just two weeks, I went from guessing to solving with confidence.”
+                                                </div>
+                                                <div class="profile">
+                                                    <div class="imgbox" style="background-color: #E0E7FF; color: #4338CA;">N</div>
+                                                    <div class="content">
+                                                        <div class="real">Noah B.</div>
+                                                        <div class="category">Student</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <img src="./img/main/testimonialsArti/icon.png" alt='"' class="icon" /> 
+                                                <div class="text">
+                                                    “The progress tracking helped me stay motivated every day.”
+                                                </div>
+                                                <div class="profile">
+                                                    <div class="imgbox" style="background-color: #DCFCE7; color: #166534;">C</div>
+                                                    <div class="content">
+                                                        <div class="real">Chloe D.</div>
+                                                        <div class="category">Student</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <img src="./img/main/testimonialsArti/icon.png" alt='"' class="icon" /> 
+                                                <div class="text">
+                                                    “We saw results quickly — it’s absolutely worth the investment.”
+                                                </div>
+                                                <div class="profile">
+                                                    <div class="imgbox" style="background-color: ; color: ;">B</div>
+                                                    <div class="content">
+                                                        <div class="real">Benjamin N.</div>
+                                                        <div class="category">Parent</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <img src="./img/main/testimonialsArti/icon.png" alt='"' class="icon" /> 
+                                                <div class="text">
+                                                    “My tutor explained things in ways that finally made sense to me.”
+                                                </div>
+                                                <div class="profile">
+                                                    <div class="imgbox" style="background-color: #E0E7FF; color: #4338CA;">N</div>
+                                                    <div class="content">
+                                                        <div class="real">Mia P.</div>
+                                                        <div class="category">Student</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <img src="./img/main/testimonialsArti/icon.png" alt='"' class="icon" /> 
+                                                <div class="text">
+                                                    “QANDA helped me build test-taking strategies I still use today.”
+                                                </div>
+                                                <div class="profile">
+                                                    <div class="imgbox" style="background-color: #DCFCE7; color: #166534;">R</div>
+                                                    <div class="content">
+                                                        <div class="real">Ryan J.</div>
+                                                        <div class="category">Student</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <img src="./img/main/testimonialsArti/icon.png" alt='"' class="icon" /> 
+                                                <div class="text">
+                                                    “My child never wanted to study before, but their tutor made it engaging.”
+                                                </div>
+                                                <div class="profile">
+                                                    <div class="imgbox" style="background-color: ; color: ;">L</div>
+                                                    <div class="content">
+                                                        <div class="real">Linda W.</div>
+                                                        <div class="category">Parent</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <img src="./img/main/testimonialsArti/icon.png" alt='"' class="icon" /> 
+                                                <div class="text">
+                                                    “Every session felt like it was made just for me.”
+                                                </div>
+                                                <div class="profile">
+                                                    <div class="imgbox" style="background-color: #E0E7FF; color: #4338CA;">E</div>
+                                                    <div class="content">
+                                                        <div class="real">Ella C.</div>
+                                                        <div class="category">Student</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <img src="./img/main/testimonialsArti/icon.png" alt='"' class="icon" /> 
+                                                <div class="text">
+                                                    “Thanks to QANDA, I got into my dream college!”
+                                                </div>
+                                                <div class="profile">
+                                                    <div class="imgbox" style="background-color: #DCFCE7; color: #166534;">D</div>
+                                                    <div class="content">
+                                                        <div class="real">Daniel H.</div>
                                                         <div class="category">Student</div>
                                                     </div>
                                                 </div>
@@ -681,7 +1510,6 @@
                             </div>
                         </div>
                     </article>
-                    -->
                     <article class="qnaArti ani">
                         <div class="inner">
                             <div class="main_t1">
@@ -847,9 +1675,20 @@
                             </ul>
                         </div>
                     </article>
-                    <article class="todayArti">
+                    <article class="readyArti ani">
                         <div class="inner">
-                            <div class="main_t1"></div>
+                            <div class="main_t1">
+                                Ready to Prep Smarter? <br/>
+                                Start Today.
+                            </div>
+                            <div class="text">
+                                Book your free consultation and discover how <br/>
+                                QANDA helps you learn smarter and score higher.
+                            </div>
+                            <a href="https://epz811nphq6.typeform.com/to/WYLOKA3I?utm_source={utm_source}&utm_medium={utm_medium}&utm_campaign={utm_campaign}&utm_content={utm_content}&utm_term={utm_term}" target="_blank" class="gotoBtn">
+                                Claim My Spot Now
+                                <img src="./img/main/MaximumArti/right-arrow.svg" altt="오른쪽 화살표" class="icon">
+                            </a>
                         </div>
                     </article>
                 </section>
@@ -883,6 +1722,28 @@
             </article>
         </main>
         
+        <section class="applyFixSec">
+            <div class="left_text">Try your first session risk-free</div>
+            <a href="https://epz811nphq6.typeform.com/to/WYLOKA3I?utm_source={utm_source}&utm_medium={utm_medium}&utm_campaign={utm_campaign}&utm_content={utm_content}&utm_term={utm_term}" target="_blank" class="applyBtn" onClick="handleApplyClick();">
+                Start Your Free Trial
+            </a>
+        </section>
+
+        <script>
+            function handleApplyClick() {
+                console.log('handleApplyClick');
+                // Facebook Pixel tracking
+                fbq('trackCustom', 'submit_application');
+                
+                // Google Tag Manager dataLayer
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    'event': 'click_form_submit',
+                    'product_name': 'SAT'
+                });
+            }
+        </script>
+
         <!--개인정보처리방침-->
         <section class="privacyPopup" id="privacyPopup">
             <div class="inner">
@@ -2303,5 +3164,6 @@
                 </div>
             </div>
         </section>
+
     </body>
 </html>

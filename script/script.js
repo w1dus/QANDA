@@ -11,7 +11,48 @@ document.addEventListener("DOMContentLoaded", function(e){
   windowResizeVideoStop();
   maximumSlide();
   clickToVideoPlay();
+  floatingShowHide();
 })
+
+const floatingShowHide = () => {
+  // 처음엔 무조건 flex로 보여줌
+  $('.applyFixSec').css('display', 'flex');
+
+  $(window).on('scroll', function () {
+    const scrollTop = $(window).scrollTop();
+    const windowHeight = $(window).height();
+
+    // 위치 정보
+    const $article03 = $('.main .article03');
+    const $article06 = $('.main .article06');
+    const $readyArti = $('.main .readyArti');
+
+    const article03Top = $article03.offset()?.top || 0;
+    const article03Bottom = article03Top + $article03.outerHeight() || 0;
+
+    const article06Top = $article06.offset()?.top || 0;
+    const article06Bottom = article06Top + $article06.outerHeight() || 0;
+
+    const readyArtiTop = $readyArti.offset()?.top || 0;
+    const readyArtiBottom = readyArtiTop + $readyArti.outerHeight() || 0;
+
+    // 해당 섹션에 닿았는지 판단
+    const inArticle03 = scrollTop + windowHeight > article03Top && scrollTop < article03Bottom;
+    const inArticle06 = scrollTop + windowHeight > article06Top && scrollTop < article06Bottom;
+    const inReadyArti = scrollTop + windowHeight > readyArtiTop && scrollTop < readyArtiBottom;
+
+    // 스크롤 맨 위일 경우 무조건 flex
+    if (scrollTop === 0) {
+      $('.applyFixSec').css('display', 'flex');
+    } else if (inArticle03 || inArticle06 || inReadyArti) {
+      $('.applyFixSec').css('display', 'none');
+    } else {
+      $('.applyFixSec').css('display', 'flex');
+    }
+  });
+};
+
+
 
 const clickToVideoPlay = () => {
   var $thumbPc = $(".main .article03 #thumbPc");
@@ -167,14 +208,14 @@ const testimonialSlide = () => {
 
 const article07_slide = () => {
   var swiper = new Swiper(".main .article07 .mySwiper", {
-    slidesPerView: 4,
+    slidesPerView: 3.5,
     spaceBetween: 30,
     loop: true,
     centeredSlides: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: false,
+    // },
     breakpoints: {
       400: {
         slidesPerView: 1.4,
@@ -197,7 +238,7 @@ const article07_slide = () => {
         spaceBetween: 20,
       },
       1024: {
-        slidesPerView: 4,
+        slidesPerView: 3,
         spaceBetween: 30,
       },
     },
